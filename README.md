@@ -56,8 +56,8 @@ python -m startrekdec spock.bin --func 0x1a60      # one function
 
 | Hotkey | Action |
 | --- | --- |
-| `Ctrl-Shift-K` | decompile the function under the cursor |
-| `Ctrl-Alt-K` | decompile the whole database (and offer to save it) |
+| `Ctrl-Shift-S` | decompile the function under the cursor |
+| `Ctrl-F5` | decompile the whole database (and offer to save it) |
 
 Inside IDA the decompilation reuses whatever names you have applied
 (`PSP_KIRK_CMD`, `aes_encrypt_cbc`, `kirk_5`, …).

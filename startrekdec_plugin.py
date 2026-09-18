@@ -9,8 +9,8 @@ each other into IDA's user plugin directory:
 It runs on a database opened with ProximaV's KIRK processor module
 (https://github.com/ProximaV/kirk):
 
-    Ctrl-Shift-K   decompile the function under the cursor
-    Ctrl-Alt-K     decompile every function in the database
+    Ctrl-Shift-S   decompile the function under the cursor
+    Ctrl-F5        decompile every function in the database
 
 The KIRK module decodes both the Kirk and Spock ROMs (they share one core), so
 the same plugin handles ``kirk.bin`` and ``spock.bin``.
@@ -30,8 +30,8 @@ _HERE = os.path.dirname(os.path.abspath(__file__))
 if _HERE not in sys.path:
     sys.path.insert(0, _HERE)
 
-HOTKEY_ONE = "Ctrl-Shift-K"
-HOTKEY_ALL = "Ctrl-Alt-K"
+HOTKEY_ONE = "Ctrl-Shift-S"
+HOTKEY_ALL = "Ctrl-F5"
 
 # ProximaV's KIRK module id (0x8000 + 0x1701); also matched by short name.
 PLFM_KIRK = 0x9701

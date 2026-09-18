@@ -60,7 +60,10 @@ python -m startrekdec spock.bin --func 0x1a60      # one function
 | `Ctrl-F5` | decompile the whole database (and offer to save it) |
 
 Inside IDA the decompilation reuses whatever names you have applied
-(`PSP_KIRK_CMD`, `aes_encrypt_cbc`, `kirk_5`, …).
+(`PSP_KIRK_CMD`, `aes_encrypt_cbc`, `kirk_5`, …). The viewer is syntax
+highlighted with IDA's theme colours (so it follows light/dark), and
+double-clicking (or Enter on) a function header, a `loc_` label or a
+`/* @0x... */` declaration jumps the disassembly to that address.
 
 ## The instruction set
 
